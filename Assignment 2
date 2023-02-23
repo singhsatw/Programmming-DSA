@@ -1,0 +1,29 @@
+#Write a function delchar(s,c) that takes as input strings s and c, where c has length 1 (i.e., a single character), and returns the string obtained by deleting all occurrences of c in s. If c has length other than 1, the function should return s
+
+def delchar(s,c):
+    if len("c")!= 1:
+        return("s")
+    x = " "
+    for character in s:
+        if character != c:
+            x += character
+        else:
+            continue
+    return(x)
+    
+#Write a Python function primeproduct(m) that takes an integer m as input and returns True if m is a prime product and False otherwise. (If m is not positive, your function should return False.)
+   
+ def primeproduct(n):
+    f = []
+    for i in range(2,n+1):
+        for j in range(2,i):
+            if (i%j== 0):
+                break
+            else:
+                f.append(i)
+    for i in range(0,len(f)):
+        for j in range(0,len(f)):
+            if (f[i]*f[j]==n):
+                return True
+    else:
+        return False
